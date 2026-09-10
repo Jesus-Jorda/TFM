@@ -210,5 +210,11 @@ Configurados en `project.godot`:
 - `GameSession`: datos globales de la partida.
 - `GestorAudio`: gestion global del audio.
 
+## Creditos de recursos
+
+- Imagenes e ilustraciones: generadas con ChatGPT y editadas con PhotoRoom y
+  Photopea.
+- Musica: generada con Suno.
+- Efectos sonoros: obtenidos de Pixabay.
 
 

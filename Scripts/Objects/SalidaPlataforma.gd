@@ -676,10 +676,17 @@ func _rellenar_creditos(contenedor: VBoxContainer) -> void:
 		["PUZLES Y MECÁNICAS", ["Jesus Miguel Jordá Gomez"]],
 		["SISTEMAS DE INTERACCIÓN", ["Jesus Miguel Jordá Gomez"]],
 		["GUION Y NARRATIVA", ["Jesus Miguel Jordá Gomez"]],
-		["ARTE Y ANIMACIÓN", ["Jesus Miguel Jordá Gomez"]],
-		["DISEÑO SONORO", ["Jesus Miguel Jordá Gomez"]],
+		["ARTE Y ANIMACIÓN", [
+			"Jesus Miguel Jordá Gomez",
+			"Imágenes generadas con ChatGPT",
+			"Edición de imágenes: PhotoRoom y Photopea"
+		]],
+		["DISEÑO SONORO", [
+			"Jesus Miguel Jordá Gomez",
+			"Efectos sonoros: Pixabay"
+		]],
 		["PRUEBAS Y CALIDAD", ["Jesus Miguel Jordá Gomez"]],
-		["MÚSICA", ["Quantum Jelly Lab"]],
+		["MÚSICA", ["Música generada con Suno"]],
 		["ELENCO DEL LABORATORIO", [
 			"El Vegetariano",
 			"La Científica",

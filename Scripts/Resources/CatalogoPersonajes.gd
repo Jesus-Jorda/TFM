@@ -225,7 +225,7 @@ func _crear_nino() -> CharacterData:
 		_hab(
 			"accion_impredecible",
 			"Acción impredecible",
-			"Un 20% de las veces ignora la orden del jugador y realiza una acción aleatoria (moverse, tocar un botón, activar una trampa, etc.).",
+			"Hay un 80% de probabilidad de que el turno se prolongue 10 segundos. En el 20% restante, el Niño ignora la orden y se mueve en una dirección aleatoria durante 5 segundos.",
 			"res://Sprites/accionimpredeciblelogo.png",
 			30.0
 		)
