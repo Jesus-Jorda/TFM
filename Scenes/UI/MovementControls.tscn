@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://c5utwl642x6e6"]
+
+[ext_resource type="Script" uid="uid://bkh2iwx1kceb7" path="res://Scripts/UI/MovementControls.gd" id="1_igl7u"]
+[ext_resource type="FontFile" uid="uid://cc8ov4qdwuhuu" path="res://DePixelBreit.ttf" id="2_tmxnh"]
+
+[node name="MovementControls" type="CanvasLayer" unique_id=1857044470]
+script = ExtResource("1_igl7u")
+
+[node name="Control" type="Control" parent="." unique_id=1822739108]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RoomName" type="Label" parent="Control" unique_id=232063179]
+layout_mode = 0
+offset_left = 452.0
+offset_top = 268.0
+offset_right = 774.0
+offset_bottom = 422.0
+theme_override_fonts/font = ExtResource("2_tmxnh")
+theme_override_font_sizes/font_size = 61
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DPad" type="Control" parent="Control" unique_id=781732440]
+layout_mode = 1
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -254.0
+offset_top = -250.0
+offset_right = -24.0
+offset_bottom = -20.0
+
+[node name="Up" type="TextureButton" parent="Control/DPad" unique_id=1392186246]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.294
+anchor_right = 0.3
+offset_left = 75.0
+offset_top = 12.801998
+offset_right = 75.899994
+offset_bottom = 19.0
+
+[node name="Left" type="TextureButton" parent="Control/DPad" unique_id=612507226]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.294
+anchor_right = 0.3
+offset_left = -7.0
+offset_top = 86.802
+offset_right = -6.100006
+offset_bottom = 93.0
+
+[node name="Down" type="TextureButton" parent="Control/DPad" unique_id=2118623486]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.294
+anchor_right = 0.3
+offset_left = 74.0
+offset_top = 155.802
+offset_right = 74.899994
+offset_bottom = 162.0
+
+[node name="Right" type="TextureButton" parent="Control/DPad" unique_id=2034568465]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.294
+anchor_right = 0.3
+offset_left = 159.0
+offset_top = 91.802
+offset_right = 159.9
+offset_bottom = 98.0
+
+[node name="InteractionPrompt" type="Button" parent="Control" unique_id=597098789]
+layout_mode = 1
+anchors_preset = 12
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -281.0
+offset_top = -320.0
+offset_right = -24.0
+offset_bottom = -258.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 21
+text = "[ E ] INTERACTUAR"
+flat = true

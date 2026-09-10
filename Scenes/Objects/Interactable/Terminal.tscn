@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://bbkld852wdolk"]
+
+[ext_resource type="Script" uid="uid://3g4s5epigebt" path="res://Scripts/Objects/Terminal.gd" id="1_yu0cs"]
+[ext_resource type="Texture2D" uid="uid://w5u43rwv0d5d" path="res://Assets/Objects/Computers/terminal_left.png" id="2_yu0cs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yu0cs"]
+size = Vector2(35, 90)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8pr1i"]
+size = Vector2(331, 313)
+
+[node name="Terminal" type="Node2D" unique_id=1708194314]
+script = ExtResource("1_yu0cs")
+direccion = 2
+object_id = "terminal"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1783416671]
+texture = ExtResource("2_yu0cs")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1661221277]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1209736022]
+position = Vector2(-2, -44.5)
+shape = SubResource("RectangleShape2D_yu0cs")
+
+[node name="InteractionArea" type="Area2D" parent="." unique_id=1454350254]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=818185277]
+position = Vector2(-2.5, -34.5)
+shape = SubResource("RectangleShape2D_8pr1i")

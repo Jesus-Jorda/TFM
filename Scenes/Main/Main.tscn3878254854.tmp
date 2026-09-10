@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bxkrcye5j3p0n"]
+
+[ext_resource type="Script" uid="uid://d0fgbhgac1s2i" path="res://Scripts/Main/Main.gd" id="1_p8rbg"]
+[ext_resource type="PackedScene" uid="uid://c5utwl642x6e6" path="res://Scenes/UI/MovementControls.tscn" id="2_qtv3y"]
+
+[node name="Main" type="Node2D" unique_id=2097190303]
+script = ExtResource("1_p8rbg")
+
+[node name="DisplayedRoom" type="Node2D" parent="." unique_id=721337227]
+
+[node name="Player" type="Node2D" parent="." unique_id=13686229]
+
+[node name="MovementControls" parent="." unique_id=1857044470 instance=ExtResource("2_qtv3y")]
+
+[node name="RoomName" type="Label" parent="." unique_id=1618067047]
+offset_left = 35.0
+offset_top = 14.0
+offset_right = 226.0
+offset_bottom = 63.0
+theme_override_font_sizes/font_size = 33
+horizontal_alignment = 1

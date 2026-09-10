@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cv3lnxnd6vmeu"]
+
+[node name="Room" type="Node2D" unique_id=788185202]
+
+[node name="Floor" type="Node2D" parent="." unique_id=1785158419]
+
+[node name="Walls" type="Node2D" parent="." unique_id=1498513920]
+
+[node name="Doors" type="Node2D" parent="." unique_id=820636145]
+
+[node name="Objects" type="Node2D" parent="." unique_id=1525352973]
+
+[node name="Decoration" type="Node2D" parent="." unique_id=1592387567]
+
+[node name="Characters" type="Node2D" parent="." unique_id=257033796]
+
+[node name="SpawnPoints" type="Node2D" parent="." unique_id=1849663820]
+
+[node name="Effects" type="Node2D" parent="." unique_id=67114773]
+
+[node name="Terminals" type="Node2D" parent="." unique_id=675869957]

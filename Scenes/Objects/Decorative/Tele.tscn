@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://dboe61manmv3g"]
+
+[ext_resource type="Texture2D" uid="uid://c3jq6gpw74udd" path="res://Sprites/teleanim-Photoroom.png" id="1_5wugr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_688sp"]
+atlas = ExtResource("1_5wugr")
+region = Rect2(50, 653, 382, 392)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_apk0u"]
+atlas = ExtResource("1_5wugr")
+region = Rect2(460, 653, 382, 392)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fpupr"]
+atlas = ExtResource("1_5wugr")
+region = Rect2(870, 653, 382, 392)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dgamw"]
+atlas = ExtResource("1_5wugr")
+region = Rect2(50, 653, 381, 392)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5rbgd"]
+atlas = ExtResource("1_5wugr")
+region = Rect2(460, 653, 381, 392)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p6r2r"]
+atlas = ExtResource("1_5wugr")
+region = Rect2(870, 653, 381, 392)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bmosy"]
+atlas = ExtResource("1_5wugr")
+region = Rect2(460, 653, 381, 392)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gyms2"]
+atlas = ExtResource("1_5wugr")
+region = Rect2(50, 653, 381, 392)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kabyq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_688sp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_apk0u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fpupr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dgamw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5rbgd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p6r2r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bmosy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gyms2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Tele" type="Node2D" unique_id=1707926656]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1546575273]
+sprite_frames = SubResource("SpriteFrames_kabyq")
+frame_progress = 0.8263412

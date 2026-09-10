@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://bxkrcye5j3p0n"]
+
+[ext_resource type="Script" uid="uid://d0fgbhgac1s2i" path="res://Scripts/Main/Main.gd" id="1_p8rbg"]
+[ext_resource type="PackedScene" uid="uid://c5utwl642x6e6" path="res://Scenes/UI/MovementControls.tscn" id="2_qtv3y"]
+[ext_resource type="Script" uid="uid://cxk8qdyy6wsb0" path="res://Scripts/Objects/InteractionManager.gd" id="3_cmk6n"]
+[ext_resource type="PackedScene" uid="uid://brh3ta0kvfyqr" path="res://Scenes/UI/TerminalInterface.tscn" id="4_termi"]
+[ext_resource type="Script" path="res://Scripts/Objects/InventoryManager.gd" id="5_inv"]
+[ext_resource type="Script" path="res://Scripts/UI/AjustesUI.gd" id="7_ajs"]
+
+[node name="Main" type="Node2D" unique_id=2097190303]
+script = ExtResource("1_p8rbg")
+
+[node name="DisplayedRoom" type="Node2D" parent="." unique_id=721337227]
+
+[node name="Player" type="Node2D" parent="." unique_id=13686229]
+
+[node name="MovementControls" parent="." unique_id=1857044470 instance=ExtResource("2_qtv3y")]
+
+[node name="InteractionManager" type="Node" parent="." unique_id=644482620]
+script = ExtResource("3_cmk6n")
+
+[node name="TerminalLayer" type="CanvasLayer" parent="." unique_id=203947561]
+layer = 10
+
+[node name="TerminalInterface" parent="TerminalLayer" unique_id=96735163 instance=ExtResource("4_termi")]
+layout_mode = 3
+
+[node name="InventoryManager" type="CanvasLayer" parent="."]
+layer = 5
+script = ExtResource("5_inv")
+
+[node name="AjustesUI" type="CanvasLayer" parent="."]
+layer = 6
+script = ExtResource("7_ajs")
